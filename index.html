@@ -9,27 +9,22 @@
 
 <div class="container">
 
-    <!-- LOGO -->
     <img src="logo.png" class="logo">
 
     <h1>Mercadito - Inventario</h1>
 
-    <!-- PANEL SUPERIOR -->
+    <!-- PANEL -->
     <div class="panel">
 
         <input type="text" id="nombre" placeholder="Producto">
         <input type="number" id="stock" placeholder="Stock">
         <input type="number" id="precio" placeholder="Precio">
 
-        <select id="categoria">
-            <option value="">Categoría</option>
-            <option>Abarrotes</option>
-            <option>Bebidas</option>
-            <option>Limpieza</option>
-            <option>Otros</option>
-        </select>
+        <select id="categoria"></select>
 
+        <button onclick="agregarCategoria()">+ Categoría</button>
         <button onclick="agregarProducto()">Agregar</button>
+
     </div>
 
     <!-- TABLA -->
@@ -46,13 +41,16 @@
         <tbody id="tabla"></tbody>
     </table>
 
-    <!-- FOOTER -->
     <div class="footer">
         <p><strong>Dirección:</strong> Calle Inventario 123</p>
         <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
     </div>
 
 </div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
 <script src="script.js"></script>
 </body>
