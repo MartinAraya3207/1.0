@@ -1,4 +1,23 @@
 let inventario = [];
+let categorias = [];
+
+function agregarCategoria() {
+    const nombre = prompt("Nombre de la nueva categoría:");
+
+    if (nombre && !categorias.includes(nombre)) {
+        categorias.push(nombre);
+        actualizarSelect();
+    }
+}
+
+function actualizarSelect() {
+    const select = document.getElementById("categoria");
+    select.innerHTML = '<option value="">Categoría</option>';
+
+    categorias.forEach(cat => {
+        select.innerHTML += `<option value="${cat}">${cat}</option>`;
+    });
+}
 
 function agregarProducto() {
     const nombre = document.getElementById("nombre").value;
