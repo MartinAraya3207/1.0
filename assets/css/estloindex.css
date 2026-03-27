@@ -1,27 +1,104 @@
-/*selector {
-    propiedad1 : valor1,
-    propiedad2 : valor2
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    margin: 0;
 }
 
-selector puede ser 
-1) etiqueta ej, li, div, p, h1
-2) id
-3) clase */
-
-p {
-    background-color: aqua;
-    font-size: 50px;
-    color: green;
+/* CONTENEDOR */
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: #0d1b1e;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 200, 0.3);
 }
+
+/* LOGO */
+.logo {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ffd700;
+    box-shadow: 0 0 15px #00ffd5;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* TITULO */
 h1 {
-    background-color: burlywood;
+    margin-bottom: 20px;
+    color: #00ffd5;
+    text-shadow: 0 0 8px #00ffd5;
 }
-#linkprincipal{
-    color: green;
-    border-left: 2px solid green;
+
+/* FORMULARIO */
+.formulario input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
 }
-.letragrande{
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+
+button {
+    padding: 10px;
+    background: linear-gradient(45deg, #00ffd5, #00bfa5);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ffd700, #c9a000);
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th {
+    background: #ffd700;
+    color: black;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+tr:hover {
+    background: rgba(0, 255, 213, 0.1);
+}
+
+/* ACCIONES */
+.acciones button {
+    margin: 2px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 30px;
+    padding: 15px;
+    background: #111;
+    border-top: 2px solid #ffd700;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer p {
+    margin: 5px;
+    color: #00ffd5;
 }
