@@ -1,51 +1,57 @@
 body {
     font-family: Arial;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(135deg, #0f2027, #1a3c40, #2c5364);
     color: white;
     margin: 0;
 }
 
 /* CONTENEDOR */
 .container {
-    width: 60%;
-    margin: 50px auto;
+    width: 70%;
+    margin: 40px auto;
     background: #0d1b1e;
     padding: 25px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 0 15px rgba(0, 255, 200, 0.3);
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
 }
 
 /* LOGO */
 .logo {
-    width: 150px;
+    width: 140px;
     border-radius: 50%;
-    margin-bottom: 10px;
     border: 3px solid #ffd700;
     box-shadow: 0 0 15px #00ffd5;
-    transition: 0.3s;
-}
-
-.logo:hover {
-    transform: scale(1.05);
 }
 
 /* TITULO */
 h1 {
-    margin-bottom: 20px;
     color: #00ffd5;
-    text-shadow: 0 0 8px #00ffd5;
+    margin: 15px 0;
 }
 
-/* FORMULARIO */
-.formulario input {
+/* PANEL */
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background: #112d32;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #00ffd5;
+}
+
+/* INPUTS */
+.panel input,
+.panel select {
     padding: 10px;
-    margin: 5px;
     border-radius: 5px;
     border: none;
     outline: none;
 }
 
+/* BOTON */
 button {
     padding: 10px;
     background: linear-gradient(45deg, #00ffd5, #00bfa5);
@@ -54,7 +60,6 @@ button {
     color: black;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 button:hover {
@@ -85,7 +90,7 @@ tr:hover {
 /* ACCIONES */
 .acciones button {
     margin: 2px;
-    padding: 5px 8px;
+    padding: 5px;
     font-size: 12px;
 }
 
@@ -95,10 +100,8 @@ tr:hover {
     padding: 15px;
     background: #111;
     border-top: 2px solid #ffd700;
-    border-radius: 0 0 10px 10px;
 }
 
 .footer p {
-    margin: 5px;
     color: #00ffd5;
 }
