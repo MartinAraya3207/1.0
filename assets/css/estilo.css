@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background: linear-gradient(135deg, #0f2027, #1a3c40, #2c5364);
+    background: linear-gradient(135deg, #00bfa5, #00897b, #004d40);
     color: white;
     margin: 0;
 }
@@ -13,7 +13,7 @@ body {
     padding: 25px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+    box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
 }
 
 /* LOGO */
@@ -27,7 +27,6 @@ body {
 /* TITULO */
 h1 {
     color: #00ffd5;
-    margin: 15px 0;
 }
 
 /* PANEL */
@@ -39,7 +38,7 @@ h1 {
     background: #112d32;
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid #00ffd5;
+    border: 2px solid #00ffd5;
 }
 
 /* INPUTS */
@@ -48,10 +47,9 @@ h1 {
     padding: 10px;
     border-radius: 5px;
     border: none;
-    outline: none;
 }
 
-/* BOTON */
+/* BOTONES */
 button {
     padding: 10px;
     background: linear-gradient(45deg, #00ffd5, #00bfa5);
@@ -66,11 +64,12 @@ button:hover {
     background: linear-gradient(45deg, #ffd700, #c9a000);
 }
 
-/* TABLA */
+/* TABLA CON LÍNEAS MARCADAS */
 table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
+    background: #0f2a2e;
 }
 
 th {
@@ -79,19 +78,18 @@ th {
 }
 
 th, td {
-    padding: 10px;
-    border-bottom: 1px solid #444;
+    padding: 12px;
+    border: 2px solid #00ffd5; /* líneas visibles */
 }
 
 tr:hover {
-    background: rgba(0, 255, 213, 0.1);
+    background: rgba(0, 255, 213, 0.2);
 }
 
-/* ACCIONES */
+/* BOTONES ACCIONES */
 .acciones button {
     margin: 2px;
     padding: 5px;
-    font-size: 12px;
 }
 
 /* FOOTER */
