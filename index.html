@@ -7,50 +7,69 @@
 </head>
 <body>
 
-<div class="container">
+<div class="main">
 
-    <img src="logo.png" class="logo">
+    <!-- IZQUIERDA (INVENTARIO) -->
+    <div class="container">
 
-    <h1>Mercadito - Inventario</h1>
+        <img src="logo.png" class="logo">
 
-    <!-- PANEL -->
-    <div class="panel">
+        <h1>Inventario</h1>
 
-        <input type="text" id="nombre" placeholder="Producto">
-        <input type="number" id="stock" placeholder="Stock">
-        <input type="number" id="precio" placeholder="Precio">
+        <div class="panel">
+            <input type="text" id="nombre" placeholder="Producto">
+            <input type="number" id="stock" placeholder="Stock">
+            <input type="number" id="precio" placeholder="Precio">
+            <input type="number" id="descuento" placeholder="Descuento %">
 
-        <select id="categoria"></select>
+            <select id="categoria"></select>
 
-        <button onclick="agregarCategoria()">+ Categoría</button>
-        <button onclick="agregarProducto()">Agregar</button>
+            <button onclick="agregarCategoria()">+ Categoría</button>
+            <button onclick="agregarProducto()">Agregar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Stock</th>
+                    <th>Precio</th>
+                    <th>Desc</th>
+                    <th>Total</th>
+                    <th>Categoría</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tabla"></tbody>
+        </table>
 
     </div>
 
-    <!-- TABLA -->
-    <table>
-        <thead>
-            <tr>
-                <th>Producto</th>
-                <th>Stock</th>
-                <th>Precio</th>
-                <th>Categoría</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody id="tabla"></tbody>
-    </table>
+    <!-- DERECHA (FIADOS) -->
+    <div class="fiados">
 
-    <div class="footer">
-        <p><strong>Dirección:</strong> Calle Inventario 123</p>
-        <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+        <h2>Gente que fió</h2>
+
+        <div class="panel-fiados">
+            <input type="text" id="nombreFiado" placeholder="Nombre">
+            <input type="number" id="deudaFiado" placeholder="Total deuda">
+            <button onclick="agregarFiado()">Agregar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Deuda</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaFiados"></tbody>
+        </table>
+
     </div>
 
 </div>
-
-<script src="script.js"></script>
-</body>
-</html>
 
 <script src="script.js"></script>
 </body>
