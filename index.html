@@ -7,41 +7,53 @@
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <!-- LOGO -->
-        <img src="logo.png" alt="Logo Mercadito" class="logo">
+    <!-- LOGO -->
+    <img src="logo.png" class="logo">
 
-        <h1>Inventario</h1>
+    <h1>Mercadito - Inventario</h1>
 
-        <div class="formulario">
-            <input type="text" id="nombre" placeholder="Producto">
-            <input type="number" id="stock" placeholder="Stock">
-            <button onclick="agregarProducto()">Agregar</button>
-        </div>
+    <!-- PANEL SUPERIOR -->
+    <div class="panel">
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Stock</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody id="tabla"></tbody>
-        </table>
+        <input type="text" id="nombre" placeholder="Producto">
+        <input type="number" id="stock" placeholder="Stock">
+        <input type="number" id="precio" placeholder="Precio">
 
-        <!-- FOOTER -->
-        <div class="footer">
-            <p><strong>Dirección:</strong> Calle Inventario 123</p>
-            <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
-        </div>
+        <select id="categoria">
+            <option value="">Categoría</option>
+            <option>Abarrotes</option>
+            <option>Bebidas</option>
+            <option>Limpieza</option>
+            <option>Otros</option>
+        </select>
 
+        <button onclick="agregarProducto()">Agregar</button>
     </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
-</footer>
+    <!-- TABLA -->
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Stock</th>
+                <th>Precio</th>
+                <th>Categoría</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+    </table>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p><strong>Dirección:</strong> Calle Inventario 123</p>
+        <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
