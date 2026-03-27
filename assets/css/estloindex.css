@@ -1,27 +1,60 @@
-/*selector {
-    propiedad1 : valor1,
-    propiedad2 : valor2
+body {
+    font-family: Arial;
+    background: #121212;
+    color: white;
+    margin: 0;
 }
 
-selector puede ser 
-1) etiqueta ej, li, div, p, h1
-2) id
-3) clase */
-
-p {
-    background-color: aqua;
-    font-size: 50px;
-    color: green;
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
+
 h1 {
-    background-color: burlywood;
+    margin-bottom: 20px;
 }
-#linkprincipal{
-    color: green;
-    border-left: 2px solid green;
+
+.formulario input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
 }
-.letragrande{
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+
+button {
+    padding: 10px;
+    background: #00c853;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #009624;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background: #333;
+}
+
+.acciones button {
+    margin: 2px;
+    padding: 5px 8px;
+    font-size: 12px;
 }
