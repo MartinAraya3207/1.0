@@ -1,0 +1,27 @@
+/*selector {
+    propiedad1 : valor1,
+    propiedad2 : valor2
+}
+
+selector puede ser 
+1) etiqueta ej, li, div, p, h1
+2) id
+3) clase */
+
+p {
+    background-color: aqua;
+    font-size: 50px;
+    color: green;
+}
+h1 {
+    background-color: burlywood;
+}
+#linkprincipal{
+    color: green;
+    border-left: 2px solid green;
+}
+.letragrande{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
